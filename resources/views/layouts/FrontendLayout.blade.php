@@ -558,7 +558,7 @@
         }
         updateDate();
     </script>
-    {{-- end lide date section --}}
+    {{-- end live date section --}}
 </body>
 
 </html>

@@ -1067,7 +1067,7 @@ button.btn:hover {
 /**********************************/
 .footer {
     position: relative;
-    padding: 60px 0 0 0;
+    padding: 30px 0 0 0;
     margin-top: 15px;
     background: #353535;
 }
@@ -1081,7 +1081,7 @@ button.btn:hover {
 .footer .footer-widget {
     position: relative;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .footer .footer-widget h1 {
