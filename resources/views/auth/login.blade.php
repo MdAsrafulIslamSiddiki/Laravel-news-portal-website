@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h3 class="title">Sign in to news 24 admin panel</h3>
+    <h3 class="title">Sign in to Internationaltv24 admin panel</h3>
     <p class="b2 mb--55">Enter your detail below</p>
     <form action="{{ route('login') }}" method="POST" class="singin-form">
         @csrf

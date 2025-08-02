@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>news 24 - @yield('title', 'admin login')</title>
+    <title>Internationaltv24 - @yield('title', 'admin login')</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,43 +34,23 @@
 <body>
     <div class="axil-signin-area">
 
-        <!-- Start Header -->
-        <div class="signin-header">
-            <div class="row align-items-center">
-                <div class="col-sm-4">
-                    <a href="{{ route('homepage') }}" target="__blank" class="site-logo"><img src="{{ asset('backend/assets/images/logo/logo.png') }}" alt="logo"></a>
-                </div>
-                
-                <div class="col-sm-8">
-                    <div class="singin-header-btn">
-
-                        {{-- @if (session('resetPasswordSuccess'))
-                            <div class="alert alert-success">
-                                {{ session('resetPasswordSuccess') }}
-                            </div>
-                        @endif --}}
-
-                        @if (session('passwordResetLinkSendSuccess'))
-                            <div class="alert alert-success">
-                                {{ session('passwordResetLinkSendSuccess') }}
-                            </div>
-                        @endif
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Header -->
+        
 
         <div class="row">
             <div class="col-xl-4 col-lg-6">
                 <div class="axil-signin-banner bg_image bg_image--9">
-                    <h3 class="title">We Offer the Best Products</h3>
+                    <h1 class="m-0 fs-1 text-uppercase text-deep-orange">International<span
+                            class="text-secondary font-weight-normal">tv24</span></h1>
+                    {{-- <a href="{{ route('homepage') }}" target="__blank" class="site-logo"><img src="{{ asset('backend/assets/images/logo/logo.png') }}" alt="logo"></a> --}}
                 </div>
             </div>
+            <div class="logo-for-phone col-lg-6 ">
+                <h1 class="m-0 display-4 text-uppercase text-deep-orange">International<span
+                            class="text-secondary font-weight-normal">tv24</span></h1>
+                {{-- <a href="{{ route('homepage') }}" target="__blank" class="site-logo"><img src="{{ asset('backend/assets/images/logo/logo.png') }}" alt="logo"></a> --}}
+            </div>
             <div class="col-lg-6 offset-xl-2">
-                <div class="axil-signin-form-wrap">
-                    
+                <div class="axil-signin-form-wrap">                    
                     <div class="axil-signin-form">
 
                         @yield('content')

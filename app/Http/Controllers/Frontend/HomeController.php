@@ -24,5 +24,6 @@ class HomeController extends Controller
 
         // dd($breakingNews);
         return view('frontend.HomePage', compact('breakingNews' , 'nationalNews', 'internationalNews', 'politicsNews', 'economyNews', 'sportsNews', 'healthNews', 'educationNews', 'technologyNews', 'entertainmentNews', 'environmentNews', 'agricultureNews'));
+        // return view('layouts.FrontendSidebar', compact('breakingNews' , 'nationalNews', 'internationalNews', 'politicsNews', 'economyNews', 'sportsNews', 'healthNews', 'educationNews', 'technologyNews', 'entertainmentNews', 'environmentNews', 'agricultureNews'));
     }
 }

@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>news 24 - @yield('title', 'Dashboard')</title>
+    <title>Internationaltv24 - @yield('title', 'Dashboard')</title>
 
     <meta name="description" content="" />
 
@@ -67,8 +67,8 @@
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="{{ url('/') }}" target="__blank" class="app-brand-link">
-              <span class="app-brand-logo demo">
-                {{-- logo --}}
+              {{-- logo --}}
+              {{-- <span class="app-brand-logo demo">
                 <svg
                   width="25"
                   viewBox="0 0 25 42"
@@ -117,7 +117,10 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bold ms-2">sneat</span>
+              <span class="app-brand-text demo menu-text fw-bold ms-2">sneat</span> --}}
+
+              <h1 class="m-0 fs-5 text-uppercase text-deep-orange">International<span
+                            class="text-secondary font-weight-normal">tv24</span></h1>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">

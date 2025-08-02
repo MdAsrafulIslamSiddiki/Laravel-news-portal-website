@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>news 24 - @yield('title', 'Homepage')</title>
+    <title>Internationaltv24 - @yield('title', 'Homepage')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Bootstrap Ecommerce Template" name="keywords">
     <meta content="Bootstrap Ecommerce Template Free Download" name="description">
@@ -308,8 +308,9 @@
         <div class="row align-items-center topbar-logo bg-white py-3 px-lg-5">
             <div class="col-lg-12 d-flex justify-content-center">
                 <a href="{{ route('homepage') }}" class="navbar-brand p-0 d-none d-lg-block">
-                    <h1 class="m-0 display-4 text-uppercase text-deep-orange">Biz<span
-                            class="text-secondary font-weight-normal">News</span></h1>
+                    <h1 class="m-0 display-4 text-uppercase text-deep-orange">International<span
+                            class="text-secondary font-weight-normal">tv24</span></h1>
+                    {{-- <img src="{{ asset('frontend/assets/img/internationaltv24.png') }}" alt="" width="1000px" height="100px"> --}}
                 </a>
             </div>
         </div>
@@ -391,13 +392,15 @@
     <div class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
-                        <h3 class="title">যোগাযোগ করুন</h3>
+                        <a href="{{ route('homepage') }}" class="navbar-brand p-0 d-lg-block">
+                            <h1 class="m-0 fs-3 text-uppercase text-deep-orange">International<span
+                                    class="text-secondary font-weight-normal">tv24</span></h1>
+                        </a>
                         <div class="contact-info">
-                            <p><i class="fa fa-map-marker"></i>123 Terry Lane, New York, USA</p>
-                            <p><i class="fa fa-envelope"></i>email@example.com</p>
-                            <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                            <p class="mt-1"><i class="fa fa-envelope"></i>Internationaltv24.com@gmail.com</p>
+                            <p><i class="fa fa-phone"></i>+880 1829-325685</p>
                             <div class="social">
                                 <a href=""><i class="fab fa-twitter"></i></a>
                                 <a href=""><i class="fab fa-facebook"></i></a>
@@ -408,7 +411,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">সাম্প্রতিক সংবাদ</h3>
+                        <ul>
+                            
+                        @foreach ($breakingNews as $news)
+                            
+                        <li><a class="text-elllipsis-2" href="{{ route('news.show', urlencode($news->news_title)) }}">{{ $news->news_title }}</a></li>
+                        @endforeach
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
                         <h3 class="title">দ্রুত লিংক</h3>
                         <ul>
@@ -420,8 +436,6 @@
                         </ul>
                     </div>
                 </div>
-                
-                
                 
                 
                 
@@ -458,7 +472,9 @@
 
                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                 <div class="col-md-6 template-by">
-                    <p>Template By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                    
+                    <p>Template By <a href="https://htmlcodex.com" target="_blank">HTML Codex</a></p>
+                    <p>Developed By <a href="https://mdasrafulislam.com" target="_blank">Md Asraful Islam Siddiki</a></p>
                 </div>
             </div>
         </div>

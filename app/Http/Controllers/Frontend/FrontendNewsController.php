@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 class FrontendNewsController extends Controller
 {
     function categoryNews($slug) {
-        $news = News::where('category', $slug)->latest()->paginate(4);
+        $news = News::where('category', $slug)->latest()->paginate(5);
         return view('frontend.newsArchive', compact('news','slug'));
     }
     function search(Request $request) {
