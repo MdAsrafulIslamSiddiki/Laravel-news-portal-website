@@ -101,6 +101,13 @@ h6 {
     font-size: 16px;
 }
 
+@media (max-width: 767.98px){
+    .language-dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+}
 .notranslate {
     -webkit-user-select: none; /* Chrome/Opera/Safari */
     -moz-user-select: none;    /* Firefox */
@@ -111,6 +118,7 @@ h6 {
 #google_element {
     display: none;
 }
+
 
 
 /**********************************/

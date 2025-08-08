@@ -497,7 +497,7 @@
     <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
 
     <!-- Google Translate Script -->
-    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script>
         // Function to load Google Translate element
         function loadGoogleTranslate() {

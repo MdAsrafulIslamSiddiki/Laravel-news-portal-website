@@ -32,9 +32,9 @@
                     <div class="col-lg-12">
                         <h3 class="related-news-title">সম্পর্কিত সংবাদ</h3>
                         <div class="related-news">
-                            <ul class="list-unstyled d-flex">
+                            <ul class="row list-unstyled">
                                 @foreach($relatedNews as $related)
-                                <li class="col-lg-3">
+                                <li class="col-6 col-lg-3">
                                     <div >
                                         <a href="{{ route('news.show', urlencode($related->news_title)) }}">
                                             <img  src="{{asset('storage/'.$related->image)}}" alt="">
